@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8D11CB2E202CC5B60084AC10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D11CB2D202CC5B60084AC10 /* main.cpp */; };
+		8DD044C3202CD8A8005A7E19 /* ReverseNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		8D11CB2A202CC5B60084AC10 /* Shayne_Gill_Homework_3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Shayne_Gill_Homework_3; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D11CB2D202CC5B60084AC10 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseNumbers.cpp; sourceTree = "<group>"; };
+		8DD044C2202CD8A8005A7E19 /* ReverseNumbers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ReverseNumbers.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				8D11CB2D202CC5B60084AC10 /* main.cpp */,
+				8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */,
+				8DD044C2202CD8A8005A7E19 /* ReverseNumbers.hpp */,
 			);
 			path = Shayne_Gill_Homework_3;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11CB2E202CC5B60084AC10 /* main.cpp in Sources */,
+				8DD044C3202CD8A8005A7E19 /* ReverseNumbers.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

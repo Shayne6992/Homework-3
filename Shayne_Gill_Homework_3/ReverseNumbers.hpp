@@ -14,7 +14,7 @@
 class reverseNumbers
 {
     long long number =0, reverse=0, originalNumber=0, response=-1; // By default private.
-public:
+    public:
     void input();
     void calc();
     void display();

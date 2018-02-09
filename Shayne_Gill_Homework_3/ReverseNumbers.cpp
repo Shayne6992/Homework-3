@@ -8,9 +8,21 @@
 
 #include "ReverseNumbers.hpp"
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
+vector <long long> integerToArray(long long x)
+{
+    vector <long long> resultArray;
+    while (true)
+    {
+        resultArray.insert(resultArray.begin(), x%10);
+        x /= 10;
+        if(x == 0)
+            return resultArray;
+    }
+}
 
 void reverseNumbers::input()
 {
@@ -24,6 +36,10 @@ void reverseNumbers::input()
         cin >> number;
     }
 }
+int reverseNumbers::power()
+void reverseNumbers::splitIntegerIntoArray();
+void reverseNumbers::printArray();
+
 void reverseNumbers::calc()
 {
     originalNumber = number;

@@ -16,8 +16,13 @@ class reverseNumbers
     long long number =0, reverse=0, originalNumber=0, response=-1; // By default private.
     public:
     void input();
+    int power();
+    void splitIntegerIntoArray();
+    void printArray();
     void calc();
     void display();
+    void ascending();
+    void descending();
     int rerun(int minValue, int maxValue);
 };
 

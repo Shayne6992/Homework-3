@@ -10,15 +10,19 @@
 #define ReverseNumbers_hpp
 
 #include <stdio.h>
+#include <string>
+
+using namespace std;
 
 class reverseNumbers
 {
-    long long number =0, reverse=0, originalNumber=0, response=-1; // By default private.
+    long long number =0, reverse=0, originalNumber=0, originalNumber2=0, response=-1; // By default private.
     public:
     void input();
+    long long userInput();
+    int powerFunction();
+    long long intToArray;
     int power();
-    void splitIntegerIntoArray();
-    void printArray();
     void calc();
     void display();
     void ascending();

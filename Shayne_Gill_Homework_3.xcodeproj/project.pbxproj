@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8D11CB2E202CC5B60084AC10 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8D11CB2D202CC5B60084AC10 /* main.cpp */; };
 		8DD044C3202CD8A8005A7E19 /* ReverseNumbers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */; };
-		8DD044C6202CF149005A7E19 /* Descending.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DD044C4202CF149005A7E19 /* Descending.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +28,6 @@
 		8D11CB2D202CC5B60084AC10 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ReverseNumbers.cpp; sourceTree = "<group>"; };
 		8DD044C2202CD8A8005A7E19 /* ReverseNumbers.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ReverseNumbers.hpp; sourceTree = "<group>"; };
-		8DD044C4202CF149005A7E19 /* Descending.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Descending.cpp; sourceTree = "<group>"; };
-		8DD044C5202CF149005A7E19 /* Descending.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Descending.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +61,6 @@
 			isa = PBXGroup;
 			children = (
 				8D11CB2D202CC5B60084AC10 /* main.cpp */,
-				8DD044C4202CF149005A7E19 /* Descending.cpp */,
-				8DD044C5202CF149005A7E19 /* Descending.hpp */,
 				8DD044C1202CD8A8005A7E19 /* ReverseNumbers.cpp */,
 				8DD044C2202CD8A8005A7E19 /* ReverseNumbers.hpp */,
 			);
@@ -129,7 +124,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DD044C6202CF149005A7E19 /* Descending.cpp in Sources */,
 				8D11CB2E202CC5B60084AC10 /* main.cpp in Sources */,
 				8DD044C3202CD8A8005A7E19 /* ReverseNumbers.cpp in Sources */,
 			);

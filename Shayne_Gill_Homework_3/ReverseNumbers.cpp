@@ -13,26 +13,30 @@
 
 using namespace std;
 
-void reverseNumbers::input()
+int reverseNumbers::input()
 {
-    cout << "Enter a number that is no less than -32767 and no greater than 32767: ";
+    const int negative = -999999999;
+    const int positive = 999999999;
+    cout << "Enter a number that is no less than " << negative << " and no greater than " << positive << ": ";
     cin >> number;
-    while (cin.fail() || number < -32767 || number > 32767) {
+    while (cin.fail() || number < negative || number > positive) {
         cout << "Invalid input. Please try again. Remember, your number can be no less than -32767 or no greater than 32767. " << endl;
         cin.clear();
         cin.ignore(100, '\n');
         cout << "Enter a number: ";
         cin >> number;
     }
+    return number;
 }
-long long reverseNumbers::userInput()
+int reverseNumbers::userInput()
 {
-    originalNumber2 = number;
+    int originalNumber2 = number;
     return originalNumber2;
     
 }
 void reverseNumbers::calc()
 {
+    reverse = 0;
     originalNumber = number;
     while(number!=0)
     {
@@ -43,6 +47,7 @@ void reverseNumbers::calc()
 }
 void reverseNumbers::display()
 {
+
     cout << "Reverse of " << originalNumber << " is " << reverse << endl;
     
 }

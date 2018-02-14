@@ -14,58 +14,71 @@ using namespace std;
 vector<int> digits;
 
 // number ^ index: power function for integers
-int power (int number, int index) {
+int power (int powerFunction, int index) {
     if (index == 0) {
         return 1;
     }
-    int num = number;
+    int num = powerFunction;
     for (int i = 1; i < index; i++) {
-        number = number * num;
+        powerFunction = powerFunction * num;
     }
-    return number;
+    return powerFunction;
+}
+
+int intCounter(int number)
+{
+    int counter = 0;
+    
+    for (; number != 0; ++counter)
+    {
+        cin >> number;
+    }
+    return counter;
 }
 
 // place an integer in an array digit-by-digit
-void splitIntegerIntoArray(long long arr[], int size, long long number) {
-    long long tempNumber = number;
+void splitIntegerIntoArray(int arr[], int size, int number) {
+    int tempNumber = number;
     for (int i = 1; i <= size; i++) {
         int index = size - i;
-        long long digit = tempNumber / power(10, index);
+        int digit = tempNumber / power(10, index);
         arr[i-1] = digit;
         tempNumber = tempNumber - power(10, index) * digit;
     }
 }
 
 // output contents of array to screen
-void printArray(long long arr[], int size) {
+void printArray(int arr[], int size) {
     for ( int i = 0; i < size; i++ ) {
         cout << arr[i] << ' ';
     }
     cout << endl;
 }
 
+
 int main(int argc, const char * argv[]) {
     
         reverseNumbers r;
-        long long array[5];
-
-    do {
-
+        int array[10];
         
-        r.input();
-        splitIntegerIntoArray(array, 5, r.userInput());
+    do {
+        
+        
+        int userInput = r.input();
+        splitIntegerIntoArray(array, 10, r.userInput());
         cout << "The original number is: " << r.userInput() << endl;
         cout << "The array is: ";
-        printArray(array, 5);
+        printArray(array, 10);
         r.calc();
         r.display();
+
         
         reverse(digits.begin(), digits.end());
         // Bubble Sort Starts Here
-        long long temp; // stores the number temporarily until sorted.
-        for(int i2=0; i2<=5; i2++) // Bubble sorts the array from smallest to largest.
+        int temp =0; // stores the number temporarily until sorted.
+        for(int i2=0; i2<10; i2++) // Bubble sorts the array from smallest to largest.
         {
-            for(int j=0; j<5; j++)
+            for(int j=0; j<9; j++)
             {
                 //Swapping element in if statement
                 if(array[j]>array[j+1]) // By changing > to < it sorts it from largest to smallest.
@@ -78,8 +91,11 @@ int main(int argc, const char * argv[]) {
         }
         // Displaying Sorted array
         cout<< "Sorted Array is: "<<endl; // // displays the array after being sorted.
-        for(int i3=0; i3<5; i3++)
+        for(int i3=4; i3<10; i3++)
         {
+            if (array[i3 ==0]) {
+                array[i3++] = '\0';
+            }
             cout << array[i3];
         }
         cout << endl;

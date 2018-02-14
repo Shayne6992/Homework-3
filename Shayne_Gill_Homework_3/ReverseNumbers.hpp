@@ -16,12 +16,11 @@ using namespace std;
 
 class reverseNumbers
 {
-    long long number =0, reverse=0, originalNumber=0, originalNumber2=0, response=-1; // By default private.
+    int number =0, reverse=0, originalNumber=0, originalNumber2=0, response=-1, counter = -1; // By default private.
     public:
-    void input();
-    long long userInput();
+    int input();
+    int userInput();
     int powerFunction();
-    long long intToArray;
     int power();
     void calc();
     void display();
